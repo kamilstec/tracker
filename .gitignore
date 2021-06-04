@@ -1,0 +1,26 @@
+*.DS_Store
+*.sbatch
+
+# C/C++ compiler
+*.so
+*.a
+*.o
+*.out
+*.obj
+
+# C Extensions
+*.so
+
+# Python
+*.py[cod]
+*$py.class
+.python-version
+__pycache__
+*.egg-info
+
+# PyCharm
+.idea
+venv
+
+#VSCode
+.vscode

@@ -1,0 +1,13 @@
+tracking:
+  tracker:
+    use_kalman: True # True / False
+    min_similarity: 0.5
+    max_age: 15 # 1 / 15 / 30 / 45
+    min_confidence: 0.5
+
+  name: tracking # Nazwa folderu dla eksperymetnu
+  #seed: 12345
+  model_path: '../gdrive/MyDrive/model.pth'
+  dataset: mot15_train_static # mot15_train / mot15_train_static / mot15_train_dynamic / mot15_KITTI-17 / mot17_09 / mot20_01 / mot15_TUD-Campus
+  frame_split: [0.0, 1.0]
+  write_images: False # True / False

@@ -1,0 +1,27 @@
+training:
+  name: training
+  cnn_encoder: resnet50 # resnet18 / resnet34 / resnet50
+  seed: 12345
+  train_dataset: mot17graph_train_train # mot17graph_train_train / mot17graph_train_02 / mot17graph_02 itd.
+  val_dataset: mot17graph_val_train # mot17graph_val_train / mot17graph_val_09 itd.
+
+  train_dataloader:
+    transform: center # center / random
+    frames_look_back: 1
+    max_distance: 250
+    vis_threshold: 0.5
+    crop_H: 150
+    crop_W: 90
+
+  val_dataloader:
+    transform: center
+    frames_look_back: 1
+    max_distance: 250
+    vis_threshold: 0.5
+    crop_H: 150
+    crop_W: 90
+
+  solver:
+    lr: 0.001
+    weight_decay: 0.001
+    epochs: 12
